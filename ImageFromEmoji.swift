@@ -9,7 +9,7 @@
 import UIKit
 
 func createImageFromString(string:String, forFontSize fontSize:CGFloat) -> UIImage {
-    let attributedString = NSAttributedString(string:emoji, attributes:[NSFontAttributeName:UIFont.systemFontOfSize(fontSize)])
+    let attributedString = NSAttributedString(string:string, attributes:[NSFontAttributeName:UIFont.systemFontOfSize(fontSize)])
     let rect = attributedString.boundingRectWithSize(CGSizeMake(0,0), options:.UsesDeviceMetrics, context:nil)
     
     UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
